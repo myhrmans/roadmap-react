@@ -1,0 +1,44 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Roadmap cards",
+  "main": "react-client/src/index.jsx",
+  "scripts": {
+    "test": "test",
+    "dev": "webpack -d --watch",
+    "start": "node ./server/index.js",
+    "build": "webpack -p",
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myhrmans/roadmap-react.git"
+  },
+  "keywords": [
+    "roadmap"
+  ],
+  "author": "Martin Myhrman",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/myhrmans/roadmap-react/issues"
+  },
+  "homepage": "https://github.com/myhrmans/roadmap-react#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.12.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.0.3"
+  }
+}

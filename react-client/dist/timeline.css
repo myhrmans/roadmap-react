@@ -1,0 +1,589 @@
+.shadow-page {
+    background: #00000083;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1039;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.light-background .roadmapTitle {
+    margin-top: 50px;
+}
+
+.line {
+    margin-left: 0px;
+}
+
+
+
+.line:after {
+    content: "";
+    background: #F7D002;
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    height: 2px;
+    width: 150px;
+}
+
+.block-1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+
+.roadmap-block {
+    background: #fff;
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.09);
+    transition: all 0.4s;
+}
+
+.roadmap-block-shadow:hover {
+    box-shadow: rgba(112, 128, 144, 0.431) 0px 8px 5px -2px, rgba(112, 128, 144, 0.404) 0px -1px 4px -2px, rgba(112, 128, 144, 0.404) 1px 0px 5px -2px, rgba(112, 128, 144, 0.4) -1px 0px 5px -2px;
+}
+
+.roadmap-title {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    padding-top: 74px;
+}
+
+.roadmap-title h3 {
+    margin-bottom: 20px;
+}
+
+.roadmap-block-big {
+    -webkit-box-shadow: 0px 3px 49px 1px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 3px 49px 1px rgb(0, 0, 0);
+    box-shadow: 0px 10px 60px 1px rgba(0, 0, 0, 0.507);
+    transition: all .4s ease;
+}
+
+.position-abs {
+    position: absolute;
+    z-index: 1040;
+}
+
+.roadmap-block h2 {
+    font-size: 1.2rem;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    color: rgb(53, 53, 53);
+}
+
+.roadmap-block .svg {
+    height: 160px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background: radial-gradient(circle, #40A1C4, #1684a2);
+    text-align: center;
+}
+
+.roadmap-block .svg svg {
+    width: 25%;
+    height: 100%;
+}
+
+.roadmap-block .svg.UI svg {
+    width: 36%;
+    height: 100%;
+}
+
+.roadmap-block .svg.security svg {
+    width: 35%;
+    height: 100%;
+}
+.roadmap-block .svg.logic svg {
+    width: 30%;
+    height: 100%;
+}
+.roadmap-block .svg.hardware svg {
+    width: 35%;
+    height: 100%;
+}
+
+.pathSafe {
+    stroke-dasharray: 314;
+    stroke: #fff;
+    fill: #fff;
+    fill-opacity: 1;
+    stroke-opacity: 0;
+}
+
+.pathSafe-door-outside {
+    stroke-dasharray: 230;
+    stroke: #fff;
+    fill: #fff;
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    transform-origin: left center;
+    transform: rotateY(0deg);
+}
+
+.pathSafe-door-inside {
+    stroke-dasharray: 100;
+    stroke: #fff;
+    fill: #fff;
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    transform-origin: left center;
+    transform: rotateY(0deg);
+}
+
+.cls-1,.cls-2 {
+    stroke: #fff;
+    fill: #fff;
+    fill-opacity: 1;
+
+}
+.text{
+
+}
+
+.LOGIC .cls-1{
+    stroke-dasharray: 320;
+}
+.HARDWARE .cls-1{
+    stroke-dasharray: 335;
+}
+.LOGIC .cls-2{
+    stroke-dasharray: 45;
+}
+.UI .cls-1{
+    stroke-dasharray: 245;
+}
+.SECURITY .cls-1{
+    stroke-dasharray: 532;
+}
+
+.security-audit {
+    width: 700px;
+    margin: auto;
+}
+
+.shield-holder {
+    width: 200px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+
+.shield-holder img {
+    height: 200px;
+    width: auto;
+}
+
+.tagline-short {
+    margin-left:auto;
+    margin-right:auto;
+    width:550px;
+}
+
+.top {
+    margin-top: 200px;
+    height: 50vh;
+}
+
+.mt-10 {
+    margin-top: 400px!important;
+}
+
+
+.featureCard {
+    height: auto !important;
+}
+
+.cardTitle {
+    -webkit-line-clamp: 1;
+    color: red;
+    height: 88px;
+}
+
+.roadmap-svg-holder {
+    position: relative;
+
+}
+.roadmap-svg-holder:after {
+
+}
+.overflow-hidden{
+
+}
+.roadmap-svg {
+    color: #86d2d2;
+    position: absolute;
+    opacity: 0.75;
+    left: -20px;
+    top:0vw;
+    z-index: 100;
+    max-width: 300%;
+    width:1100px;
+    min-width:100%;
+    min-height: 100%;
+}
+
+
+
+.phone-overlay {
+    position: relative;
+}
+
+.phone-overlay img {
+    position: absolute;
+    height: 900px;
+    top: -180px;
+    left: 600px;
+}
+
+.ptb-10 {
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.mb-10 {
+    margin-bottom: 150px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+.doublePhone {
+    position: absolute;
+    height: 700px;
+}
+
+.doublePhone.behind {
+    position: absolute;
+    height: 700px;
+    z-index: -1;
+    left: 130px;
+    top: 50px;
+}
+
+@media (max-width:1000px) {
+    .top {
+        height: 80vh!important;
+        min-height:600px;
+        margin-top: 22vh;
+        margin-bottom: 0px;
+        padding-bottom:0px!important;
+    }
+    .shield-holder img {
+        text-align: center;
+        float: initial;
+        height: 200px;
+    }
+    .roadmap-svg{
+        height:350px;
+        top:-300px!important;
+        left:15%!important;
+        opacity: 0.15;
+    }
+    .shield-holder {
+        text-align: center;
+    }
+    .phone-overlay img {
+        display: none;
+    }
+}
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 0;
+    }
+    to {
+        stroke-dasharray: 24;
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.roadmap-block .description {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    color: rgb(53, 53, 53);
+}
+
+.roadmap-block .description p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;
+    /* fallback */
+    max-height: 60px;
+    /* fallback */
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+
+}
+
+.showFullCard {
+    color: #000000;
+    transition: all 0.3s ease;
+    font-size:0.9rem;
+}
+
+.showFullCard:hover {
+    color: #43237a;
+    transform: scale(1.01);
+    transform-origin: 0% 0%;
+    cursor: pointer;
+}
+
+.roadmap-block .owner {
+    height: 40px;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: rgb(53, 53, 53);
+    position: relative;
+    display: none;
+}
+
+.roadmap-block .link {
+    position: absolute;
+    bottom: 20px;
+    width:100%;
+}
+
+.roadmap-block .link .links {
+    font-size: 1rem;
+    color: #43237a;
+    position: relative;
+    display: none;
+}
+.roadmap-block .link a img{
+    height:30px;
+    margin:5px;
+}
+a {
+    color: #F7D002;
+    transition: all 0.15s;
+}
+
+a:hover {
+    color: #D3B100;
+}
+
+.roadmap-block .progressbarCard {
+    height: 6px;
+    background: rgba(199, 199, 199, 0.609);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.roadmap-block .progressbarCard .fill {
+    height: 6px;
+    background: linear-gradient(to right, #1684a2, #69bee5);
+    width: 0%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.section{
+    padding: 0px;
+}
+.btn-outline-load {
+    color: #FFF !important;
+    background-color: #303952 !important;
+    border: 2px solid #303952 !important;
+    border-radius: 30px !important;
+    width: 350px;
+    text-transform: none;
+    font-size: 1rem;
+    height: 50px;
+    line-height: 2.16;
+}
+
+.btn-outline-load:hover {
+    color: rgb(230, 230, 230) !important;
+    border: 2px solid #43237a !important;
+}
+
+.slider {
+    width: 100%;
+    padding: 0px;
+}
+
+.block-third {
+    margin-left: 275px;
+}
+
+.text-roadmap {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+    .roadmap-svg {
+        left: 10px;
+    }
+    .mt-6 {
+        margin-top: 0;
+    }
+}
+@media (max-width: 767px){
+.tagline-short {
+    font-size: 17px;
+}
+@media (max-width:575px){
+    .roadmap-title{
+        margin-left:15px;
+    }
+}
+}
+@media (max-width:1000px) {
+    .roadmap-title{
+        padding-top:30px!important;
+    }
+    .text{
+        padding-left:0px;
+    }
+    .roadmap-block h2{
+        font-size: 1.1rem;
+    }
+    .roadmap-block .description{
+        font-size: 0.9rem;
+    }
+    .roadmap-block-big h2{
+        font-size: 1.4rem!important;
+    }
+    .roadmap-block-big .description{
+        font-size: 1rem!important;
+    }
+    .block-1:first-of-type{
+        margin-top:0px;
+        padding-top:400px;
+    }
+    .block-1:last-of-type{
+        padding-bottom:100px;
+    }
+    .block {
+        float: left;
+        z-index: 1100;
+    }
+    .slider {
+        position: relative;
+        z-index: 1200;
+    }
+    .flickity-viewport {
+        position: relative;
+        z-index: 1201;
+    }
+    .flickity-slider {
+        position: relative;
+        z-index: 1202;
+    }
+    .block {
+        position: relative;
+        z-index: 1203;
+    }
+    .roadmap-block {
+        height:300px;
+        width: calc(50vw - 10px);
+        max-width:250px;
+        min-width: 100px;
+        margin-right: 30px !important;
+    }
+    .roadmap-block .svg{
+        height:100px;
+    }
+    .roadmap-block .svg svg{
+        height:90px!important;
+        margin-top:5px;
+    }
+    .roadmap-block .cardTitle{
+        height:50px;
+        padding-top:15px;
+    }
+    .ml-0 {
+        margin-left: -15px !important;
+    }
+    .featureCard .text {
+        margin-left: 0px !important;
+    }
+    .slick-slide {
+        min-width: calc(90vw - 30px);
+        max-width: 550px;
+    }
+    .prevSlider {
+        width: 200px;
+        background: red;
+    }
+    .nextSlider {
+        width: 400px;
+        background: red;
+    }
+    .featureCard .text {
+        height: auto;
+    }
+    .top {
+        height: auto;
+    }
+    .shield-holder {
+        display: none;
+    }
+    .security-audit {
+        width: 100%;
+    }
+    .tagline-short {
+        width: 70%;
+        margin-left:15%;
+        text-align: center;
+    }
+    #title-top {
+        text-align: center;
+    }
+}
+@media (max-width:1800px) and (min-width:1000px){
+    .top {
+        margin-top: 200px;
+        height: 60vh;
+    }
+}
+.section{
+    padding:0px;
+}
+.position-abs {
+    position: absolute;
+    z-index: 999210;
+}
+
+.flickity-viewport {
+    overflow: visible;
+}
