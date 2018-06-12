@@ -2,7 +2,7 @@ import React from "react";
 import Project from "./Project";
 
 class Section extends React.Component {
-  render() {
+  render(props) {
     return (
       <div className="block-1 col-12">
         <div className="row" id="Mobile">
@@ -21,7 +21,7 @@ class Section extends React.Component {
               <h3 className="featureTitle">{this.props.title}</h3>{this.props.description}
             </div>
           </div>
-          <Project />
+          {this.props.children}
         </div>
       </div>
     );
