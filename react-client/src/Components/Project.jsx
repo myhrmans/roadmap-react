@@ -6,6 +6,8 @@ class Project extends React.Component {
     if (progressNew>=100) {
       progressNew=100;
       borderRad="0px";
+    }else if(progressNew<0){
+      progressNew=0;
     }
        return (
       <div className="col-lg-4 block col-xl-3">
