@@ -1,7 +1,13 @@
 import React from "react";
 class Project extends React.Component {
   render() {
-    return (
+    let progressNew = this.props.progress;
+    let borderRad = "5px";
+    if (progressNew>=100) {
+      progressNew=100;
+      borderRad="0px";
+    }
+       return (
       <div className="col-lg-4 block col-xl-3">
         <div className="roadmap-block roadmap-block-shadow">
           <h2 className="cardTitle">{this.props.title}</h2>
@@ -12,14 +18,6 @@ class Project extends React.Component {
             <p id="desc">
             {this.props.description}
             </p>
-            <span
-              className="descRows"
-              style={{
-                display: "none"
-              }}
-            >
-              6
-            </span>
           </div>
           <div className="link">
             <div className="col-12 row">
@@ -37,8 +35,8 @@ class Project extends React.Component {
             <div
               className="fill"
               style={{
-                width: this.props.progress,
-                borderTopRightRadius: "5px"
+                width: progressNew + "%",
+                borderTopRightRadius: borderRad
               }}
             />
           </div>
