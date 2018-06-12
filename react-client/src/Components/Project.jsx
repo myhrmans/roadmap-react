@@ -1,28 +1,23 @@
 import React from "react";
 class Project extends React.Component {
   render() {
-    return (
+    let progressNew = this.props.progress;
+    let borderRad = "5px";
+    if (progressNew>=100) {
+      progressNew=100;
+      borderRad="0px";
+    }
+       return (
       <div className="col-lg-4 block col-xl-3">
         <div className="roadmap-block roadmap-block-shadow">
-          <h2 className="cardTitle">Fingerprint Authentication</h2>
+          <h2 className="cardTitle">{this.props.title}</h2>
           <div className="svg">
             <svg />
           </div>
           <div className="description">
             <p id="desc">
-              Current implementations of fingerprint authentication are reliant
-              on storing the seed in an unsafe space, prone to attack if the
-              phone is stolen and rooted. We are examining novel ways of
-              overcoming this issue.
+            {this.props.description}
             </p>
-            <span
-              className="descRows"
-              style={{
-                display: "none"
-              }}
-            >
-              6
-            </span>
           </div>
           <div className="link">
             <div className="col-12 row">
@@ -40,8 +35,8 @@ class Project extends React.Component {
             <div
               className="fill"
               style={{
-                width: "80%",
-                borderTopRightRadius: "5px"
+                width: progressNew + "%",
+                borderTopRightRadius: borderRad
               }}
             />
           </div>

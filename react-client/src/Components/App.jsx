@@ -12,19 +12,22 @@ import "../../dist/cards";
 class App extends Component {
   render() {
     return (
-      <Router>
         <div>
           <Roadmap>
-              <Section title="Mobileasdasd" description="YES">
-                  <Project></Project>
-                  <Project></Project>
-                  <Project></Project>
-                  <Project></Project>
-                  <Project></Project>
-                  </Section>
-              </Roadmap>
+              <Section title="Mobile" description="YES">
+                  <Project title="Test" description="test" progress="104"></Project>
+                  <Project title="Test" description="test" progress="20"></Project>
+                  <Project title="Test" description="test" progress="20"></Project>
+                  <Project title="Test" description="test" progress="20"></Project>
+              </Section>
+              <Section title="Desktop" description="YES">
+                  <Project title="Test" description="test" progress="20"></Project>
+                  <Project title="Test" description="test" progress="20"></Project>
+                  <Project title="Test" description="test" progress="20"></Project>
+                  <Project title="Test" description="test" progress="20"></Project>
+              </Section>
+          </Roadmap>
         </div>
-      </Router>
     )
   }
 }
