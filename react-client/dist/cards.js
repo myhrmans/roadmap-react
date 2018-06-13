@@ -142,9 +142,6 @@ $(".roadmap-block").click(function(e) {
         }
         oldW = $(block).innerWidth();
         description = $(block.children(".description"));
-        progressbarCard = $(block.children(".progressbarCard"));
-        linka = $(block.find(".link"));
-        links = $(block.find(".links"));
         owner = $(block.find(".owner"));
         if (owner[0] == undefined) {
             isOwnerSet = false;
@@ -176,7 +173,6 @@ $(".roadmap-block").click(function(e) {
         }
         changeHeight = $(title).outerHeight(true);
         changeHeight = changeHeight + $(imageBlock).outerHeight(true);
-        changeHeight = changeHeight + $(linka).outerHeight(true);
         changeHeight = changeHeight + 11;
         if ($(window).width() < 360) {
             changeHeight = changeHeight + 80;
@@ -186,7 +182,6 @@ $(".roadmap-block").click(function(e) {
             changeHeight = changeHeight + $(owner).outerHeight(true);
         }
         if (changeHeight < 380) changeHeight = 380;
-        animationDirection = 1;
 
         $(".shadow-page").fadeIn();
 
@@ -198,7 +193,6 @@ $(".roadmap-block").click(function(e) {
             changeHeight = $(title).outerHeight(true);
             changeHeight = changeHeight + $(imageBlock).outerHeight(true);
             changeHeight = changeHeight + $(pTag).outerHeight(true);
-            changeHeight = changeHeight + $(linka).outerHeight(true);
             changeHeight = changeHeight + 11;
 
             changeHeight = changeHeight + 30;
