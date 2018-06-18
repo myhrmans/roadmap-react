@@ -1,4 +1,5 @@
 import React from "react";
+
 class Project extends React.Component {
   render() {
     let progressNew = this.props.progress;
@@ -14,7 +15,8 @@ class Project extends React.Component {
         <div className="roadmap-block roadmap-block-shadow">
           <h2 className="cardTitle">{this.props.title}</h2>
           <div className="svg">
-            <svg />
+
+            <img src={this.props.svg}/>
           </div>
           <div className="description">
             <p id="desc">

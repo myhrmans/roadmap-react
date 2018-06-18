@@ -1,17 +1,7 @@
 import $ from 'jquery'; 
+import Flickity from 'flickity';
 var before = 0;
 var after = 0;
-function initSlider(slider) {
-    $("." + slider).flickity({
-        resize: true,
-        freeScroll: true,
-        prevNextButtons: false,
-        //pageDots: false,
-        fullscreen: true,
-
-        adaptiveHeight: true
-    });
-}
 function destroySlider(slider) {
     var destroy = $("." + slider).flickity();
     destroy.flickity("destroy");
@@ -45,10 +35,10 @@ var cardsLoaded = function() {
             $(block).addClass("roadmap-block-shadow");
             if ($(window).width() < 1000) {
                 $(bigBlock).css("height", "300px");
-                $(title).animate({ height: "50px" }, 300);
+                $(title).animate({ height: "58px" }, 300);
             } else {
                 $(block).css("height", "400px");
-                $(title).animate({ height: "88px" }, 300);
+                $(title).animate({ height: "58px" }, 300);
             }
             $(link).html("Show Detail");
             $(links).hide();
@@ -79,7 +69,7 @@ $(".roadmap-block").click(function(e) {
         }
         aniDir = 1;
         block = $(this);
-        $(block).css("max-width", "1000px");
+        $(block).css("max-width", "400px");
         if ($(window).width() < 1000) {
             blockTop = $(block.parent(".block"));
             position = blockTop.get(0).getBoundingClientRect();
@@ -87,9 +77,12 @@ $(".roadmap-block").click(function(e) {
             $(blockTop).animate({ "margin-left": -adjustments + 50 }, 300);
         } else {
             blockTop = block;
-            box = $(block.parent(".block"));
+            console.log(blockTop)
+            box = $(blockTop.parent(".block"));
+            box = $(box.parent(".slider"));
             box = $(box.parent(".row"));
             box = $(box.parent(".block-1"));
+            console.log(box);
             boxHeight = $(box).height();
             $(box).height(boxHeight);
         }
@@ -215,10 +208,10 @@ $(".showFullCard").click(function() {
         $(block).addClass("roadmap-block-shadow");
         if ($(window).width() < 1000) {
             $(bigBlock).css("height", "300px");
-            $(title).animate({ height: "50px" }, 300);
+            $(title).animate({ height: "58px" }, 300);
         } else {
             $(block).css("height", "400px");
-            $(title).animate({ height: "88px" }, 300);
+            $(title).animate({ height: "58px" }, 300);
         }
         $(link).html("Show Detail");
         $(bigBlock).css("margin-left", "0px");
@@ -258,18 +251,6 @@ if (resize != $(window).width() && resize > 1000 && $(window).width() < 1001) {
     location.reload();
 }
 }
-function getDomainName(url) {
-var hostname;
-if (url.indexOf("://") > -1) {
-    hostname = url.split("/")[2];
-} else {
-    hostname = url.split("/")[0];
-}
-hostname = hostname.split(":")[0];
-hostname = hostname.split("?")[0];
-
-return hostname;
-}
 var resize = $(window).width();
 $(window).resize(function() {
 cardFix();
@@ -277,4 +258,38 @@ cardFix();
 $(document).ready(function() {
 cardsLoaded();
 cardFix();
+if ($(window).width() < 1001) {
+$(".block").removeClass("col-lg-4 col-xl-3");
+var elem = document.querySelector('.slider');
+var flkty = new Flickity( elem, {
+    resize: true,
+    freeScroll: true,
+    prevNextButtons: false,
+    //pageDots: false,
+    fullscreen: true,
+
+    adaptiveHeight: true
+  });
+}
+else {
+
+    $(".nextSlider").remove();
+    $(".prevSlider").remove();
+}
+function initSlider(slider) {
+    $("." + slider).flickity({
+        resize: true,
+        freeScroll: true,
+        prevNextButtons: false,
+        //pageDots: false,
+        fullscreen: true,
+
+        adaptiveHeight: true
+    });
+}
+function destroySlider(slider) {
+
+    var destroy = $("." + slider).flickity();
+    destroy.flickity('destroy');
+}
 });
