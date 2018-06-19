@@ -23,10 +23,10 @@ npm run server-dev
 
 After the command finished to load, open `http://localhost:8080` in a browser.
 
-### 3. Make adjustments
+### 4 Make adjustments
 
 * Add your own SVGs under dist/svgs and simply add them inside src/Components/App.jsx
 * Adjust colors and other properties under dist/style.css
 
-### 4. Todo
+### 5. Todo
 * Fix JSON injection
