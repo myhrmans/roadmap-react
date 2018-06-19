@@ -11,16 +11,12 @@ Safari 9.1
 Internet explorer has no support and the properties have to be edited by hand.
 */
 :root {
-    --background: #FFFFFF;
-    --fontColorStandard: #000000;
+    --backgroundEntirePage: #FFFFFF; /* Background color for entire page */
+    --fontColorStandard: #000000; /* Standard color for  text on entire page */
     --fontColorGrey: rgb(73, 73, 73);
-    --fontColorStandardLowOpacity: #00000090;
-    --fontColorStandardHighOpacity: #000000;
-    --fontColorButton: #00000090;
-    --fillColorButton: #F7D002;
-    --fillColorButtonBorder: #F7D002;
-    --fontColorButtonHover: #ffffff;
-    --fillColorButtonHover: #D3B100;
+    --seperatorLineColor:#F7D002;
+    --imageBackgroundCard: radial-gradient(circle, #40A1C4, #1684a2); /* Background behind the SVG on each card */
+    --progressColor: linear-gradient(to right, #1684a2, #69bee5); /* Background on each progressbar */
 }
 body {
     font-family: 'Nunito Sans', 'sans-serif' !important;
@@ -55,6 +51,7 @@ body {
 .line:after {
     content: "";
     background: #F7D002;
+    color: var(--seperatorLineColor);
     position: absolute;
     bottom: -25px;
     left: 15px;
@@ -121,6 +118,7 @@ body {
     margin-left: -15px;
     margin-right: -15px;
     background: radial-gradient(circle, #40A1C4, #1684a2);
+    background: var(--imageBackgroundCard);
     text-align: center;
 }
 
@@ -154,7 +152,30 @@ h3{
     /* number of lines to show */
     -webkit-box-orient: vertical;
 }
+.roadmap-block .progressbarCard {
+    height: 7.2px;
+    background: rgba(199, 199, 199, 0.609);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
+.roadmap-block .progressbarCard .fill {
+    height: 7.2px;
+    background: linear-gradient(to right, #1684a2, #69bee5);
+    background: var(--progressColor);
+    width: 0%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .showFullCard {
     color: #000000;
     transition: all 0.3s ease;
