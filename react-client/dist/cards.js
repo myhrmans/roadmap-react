@@ -11,7 +11,6 @@ var cardsLoaded = function () {
         counter = 1;
         $(".block").each(function () {
             if ((counter % 4) == 0 && counter != 0) {
-                console.log($(this));
                 $(this).addClass("block-third");
             }
             counter++;
@@ -117,11 +116,9 @@ var cardsLoaded = function () {
                 $(blockTop).animate({ "margin-left": -adjustments + 50 }, 300);
             } else {
                 blockTop = block;
-                console.log(blockTop)
                 box = $(blockTop.parent(".block"));
                 box = $(box.parent(".row"));
                 box = $(box.parent(".block-1"));
-                console.log(box);
                 boxHeight = $(box).height();
                 $(box).height(boxHeight);
             }
@@ -130,48 +127,6 @@ var cardsLoaded = function () {
             imageBlock = $(block.children(".svg"));
             $(title).animate({ height: "60px" }, 300);
             svg = $(imageBlock.children("svg"));
-            if ($(imageBlock).hasClass("UI")) {
-                svg = $(svg.children("g"));
-                svg = $(svg.children("g"));
-
-                svgUI = $(svg.children(".cls-1"));
-                $(svgUI).css("stroke-dashoffset", "245");
-                $(svgUI).css("fill-opacity", "0");
-                $(svgUI).css("stroke-opacity", "1");
-                $(svgUI).animate({ "stroke-dashoffset": "0" }, 1800, function () {
-                    $(this).animate({ "fill-opacity": "1" }, 400, function () { });
-                });
-            } else if ($(imageBlock).hasClass("logic")) {
-                svg = $(svg.children("g"));
-                svg = $(svg.children("g"));
-                svgOutline = $(svg.children(".cls-2"));
-                svgLine = $(svg.children(".cls-1"));
-                $(svgOutline).css("stroke-dashoffset", "45");
-                $(svgLine).css("stroke-dashoffset", "320");
-
-                $(svgOutline).animate({ "stroke-dashoffset": "0" }, 1100);
-                $(svgLine)
-                    .delay(400)
-                    .animate({ "stroke-dashoffset": "0" }, 1200);
-            } else if ($(imageBlock).hasClass("security")) {
-                svg = $(svg.children("g"));
-                svg = $(svg.children("g"));
-                svgLine = $(svg.children(".cls-1"));
-                $(svgLine).css("stroke-dashoffset", "532");
-
-                $(svgLine)
-                    .delay(400)
-                    .animate({ "stroke-dashoffset": "0" }, 1200);
-            } else if ($(imageBlock).hasClass("hardware")) {
-                svg = $(svg.children("g"));
-                svg = $(svg.children("g"));
-                svgLine = $(svg.children(".cls-1"));
-                $(svgLine).css("stroke-dashoffset", "335");
-
-                $(svgLine)
-                    .delay(400)
-                    .animate({ "stroke-dashoffset": "0" }, 1200);
-            }
             oldW = $(block).innerWidth();
             description = $(block.children(".description"));
             owner = $(block.find(".owner"));
@@ -223,11 +178,15 @@ var cardsLoaded = function () {
             setTimeout(function () {
                 aniDir = 2;
                 changeHeight = $(title).outerHeight(true);
+                console.log("Title: " + changeHeight)
                 changeHeight = changeHeight + $(imageBlock).outerHeight(true);
+                console.log("Title + image: " + changeHeight)
                 changeHeight = changeHeight + $(pTag).outerHeight(true);
-                changeHeight = changeHeight + 11;
-
-                changeHeight = changeHeight + 30;
+                console.log("Title + image + ptag: " + changeHeight)
+                changeHeight = changeHeight + 21;
+                
+                changeHeight = changeHeight + 50;
+                console.log("Title + image + ptag +61 : " + changeHeight)
 
                 if (isOwnerSet) {
                     changeHeight = changeHeight + $(owner).outerHeight(true);
