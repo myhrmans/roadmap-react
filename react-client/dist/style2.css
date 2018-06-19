@@ -26,9 +26,10 @@
 :focus {
     outline: 0 !important;
 }
-
+@media (max-width: 1000px) {
 html {
     overflow-x: hidden;
+}
 }
 
 body {
