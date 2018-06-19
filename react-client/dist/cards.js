@@ -74,10 +74,10 @@ var cardsLoaded = function () {
             $(block).addClass("roadmap-block-shadow");
             if ($(window).width() < 1000) {
                 $(bigBlock).css("height", "300px");
-                $(title).animate({ height: "58px" }, 300);
+                $(title).animate({ height: "50px" }, 300);
             } else {
                 $(block).css("height", "400px");
-                $(title).animate({ height: "58px" }, 300);
+                $(title).animate({ height: "50px" }, 300);
             }
             $(link).html("Show Detail");
             $(links).hide();
