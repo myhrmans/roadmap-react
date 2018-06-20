@@ -1,0 +1,94 @@
+{
+	"Roadmap": [{
+			"Theme": "Standard",
+			"Section": [{
+					"Title": "Cross-Platform",
+					"Text": "Features applicable to both desktop and mobile."
+				},
+				{
+					"Project": {
+						"Title": "QR scanning",
+						"Description": "QR scanning enables faster seed and address entry. Messages can be added to address QR codes, with planned support for transaction amount (e.g. for an invoice).",
+						"Done": "80%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Multi-language support",
+						"Description": "Full app translation into multiple languages. An ongoing process.",
+						"Owner": "None",
+						"Done": "70%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Multi-language support",
+						"Description": "Full app translation into multiple languages. An ongoing process.",
+						"Owner": "None",
+						"Done": "70%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Multi-language support",
+						"Description": "Full app translation into multiple languages. An ongoing process.",
+						"Owner": "None",
+						"Done": "70%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Multi-language support",
+						"Description": "Full app translation into multiple languages. An ongoing process.",
+						"Owner": "None",
+						"Done": "70%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Multi-language support",
+						"Description": "Full app translation into multiple languages. An ongoing process.",
+						"Owner": "None",
+						"Done": "70%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Multi-language support",
+						"Description": "Full app translation into multiple languages. An ongoing process.",
+						"Owner": "None",
+						"Done": "70%"
+					}
+				}
+			]
+		},
+		{
+			"Section": [{
+					"Title": "Mobile",
+					"text": "Features specific to Trinity Mobile."
+				},
+				{
+					"Project": {
+						"Title": "Fingerprint Authentication",
+						"Description": "Current implementations of fingerprint authentication are reliant on storing the seed in an unsafe space, prone to attack if the phone is stolen and rooted. We are examining novel ways of overcoming this issue.",
+						"Done": "80%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Fingerprint Authentication",
+						"Description": "Current implementations of fingerprint authentication are reliant on storing the seed in an unsafe space, prone to attack if the phone is stolen and rooted. We are examining novel ways of overcoming this issue.",
+						"Done": "80%"
+					}
+				},
+				{
+					"Project": {
+						"Title": "Fingerprint Authentication",
+						"Description": "Current implementations of fingerprint authentication are reliant on storing the seed in an unsafe space, prone to attack if the phone is stolen and rooted. We are examining novel ways of overcoming this issue.",
+						"Done": "80%"
+					}
+				}
+			]
+		}
+	]
+}
