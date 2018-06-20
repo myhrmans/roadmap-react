@@ -1,5 +1,4 @@
 import React from "react";
-
 class Project extends React.Component {
   render() {
     let progressNew = this.props.progress;
@@ -13,7 +12,7 @@ class Project extends React.Component {
     }
     var image;
     if (svg != null && svg != "") {
-      image = <img src={this.props.svg} />
+      image = <img class="svg" src={this.props.svg} />
     } else {
       image = null;
     }

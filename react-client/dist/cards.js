@@ -90,7 +90,7 @@ var cardsLoaded = function () {
                 $(blockTop).animate({ "margin-left": 0 }, 200);
             }
             $(block).css("width", oldW + "px");
-            $(pTag).css({ "max-height": "60px", "-webkit-line-clamp": "3" });
+            $(pTag).css({ "max-height": "100px", "-webkit-line-clamp": "5" });
             $(block).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function (
                 event
             ) {
@@ -220,7 +220,7 @@ var cardsLoaded = function () {
                 $(owner).hide();
             }
             $(".shadow-page").fadeOut();
-            $(pTag).css({ "max-height": "60px", "-webkit-line-clamp": "3" });
+            $(pTag).css({ "max-height": "100px", "-webkit-line-clamp": "5" });
             $(block).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function (
                 event
             ) {
