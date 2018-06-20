@@ -1,7 +1,9 @@
 {
   "Roadmap": [
     {
-      "Theme": "Standard",
+      "Theme": "Standard"
+    },
+    {
       "Section": [
         {
           "Title": "Cross-Platform",
