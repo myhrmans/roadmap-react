@@ -15,7 +15,7 @@ Internet explorer has no support and the properties have to be edited by hand.
     --fontColorStandard: #000000; /* Standard color for  text on entire page */
     --fontColorGrey: rgb(73, 73, 73);
     --seperatorLineColor:#F7D002;
-    --imageBackgroundCard: radial-gradient(circle, #40A1C4, #1684a2); /* Background behind the SVG on each card */
+    --imageBackgroundCard: #FFFFFF /* Background behind the SVG on each card */
     --progressColor: linear-gradient(to right, #1684a2, #69bee5); /* Background on each progressbar */
 }
 body {
