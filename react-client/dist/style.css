@@ -11,12 +11,13 @@ Safari 9.1
 Internet explorer has no support and the properties have to be edited by hand.
 */
 :root {
-    --backgroundEntirePage: #FFFFFF; /* Background color for entire page */
-    --fontColorStandard: #000000; /* Standard color for  text on entire page */
+    --backgroundEntirePage: #FFF; /* Background color for entire page */
+    --fontColorStandard: #FFFFFF; /* Standard color for  text on entire page */
     --fontColorGrey: rgb(73, 73, 73);
-    --seperatorLineColor:#F7D002;
-    --imageBackgroundCard: #FFFFFF /* Background behind the SVG on each card */
-    --progressColor: linear-gradient(to right, #1684a2, #69bee5); /* Background on each progressbar */
+    --seperatorLineColor:#FFF;
+    --imageBackgroundCard: #fafafa; /* Background behind the SVG on each card */
+    --progressColor: linear-gradient(to right, #FFF, #FFF); /* Background on each progressbar */
+    --cardBackground: #FFF;
 }
 body {
     font-family: 'Nunito Sans', 'sans-serif' !important;
@@ -24,10 +25,14 @@ body {
     position: relative;
     overflow-x: hidden;
     margin: 0px;
-    background-color: #FFFFFF;
-    background-color: var(--backgroundEntirePage);
+    background: #FFFFFF;
+    background: var(--backgroundEntirePage)!important;
     color: #000000;
-    color: var(--fontColorStandard);
+    color: var(--fontColorStandard)!important;
+}
+.path-qubic{
+    fill: #ff7d11;
+    outline: #fff;
 }
 .shadow-page {
     background: #00000083;
@@ -51,7 +56,7 @@ body {
 .line:after {
     content: "";
     background: #F7D002;
-    color: var(--seperatorLineColor);
+    background: var(--seperatorLineColor);
     position: absolute;
     bottom: -25px;
     left: 15px;
@@ -67,6 +72,7 @@ body {
 
 .roadmap-block {
     background: #fff;
+    background: var(--cardBackground);
     height: 400px;
     width: 100%;
     border-radius: 5px;
@@ -146,9 +152,9 @@ h3{
     line-height: 20px;
     font-size: 16px;
     /* fallback */
-    max-height: 60px;
+    max-height: 100px;
     /* fallback */
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     /* number of lines to show */
     -webkit-box-orient: vertical;
 }
@@ -194,16 +200,6 @@ h3{
     bottom: 20px;
     width: 100%;
 }
-
-a {
-    color: #F7D002;
-    transition: all 0.15s;
-}
-
-a:hover {
-    color: #D3B100;
-}
-
 .roadmap-block .barCard {
     height: 7.2px;
     background: rgba(199, 199, 199, 0.609);
