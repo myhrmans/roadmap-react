@@ -10,59 +10,63 @@
                "Text":"Features applicable to both desktop and mobile."
             },
             {  
-               "Project":{  
-                  "Title":"QR scanning",
-                  "Description":"QR scanning enables faster seed and address entry. Messages can be added to address QR codes, with planned support for transaction amount (e.g. for an invoice).",
-                  "Done":"80%"
-               }
-            },
-            {  
-               "Project":{  
-                  "Title":"Multi-language support",
-                  "Description":"Full app translation into multiple languages. An ongoing process.",
-                  "Owner":"None",
-                  "Done":"70%"
-               }
-            },
-            {  
-               "Project":{  
-                  "Title":"Multi-language support",
-                  "Description":"Full app translation into multiple languages. An ongoing process.",
-                  "Owner":"None",
-                  "Done":"70%"
-               }
-            },
-            {  
-               "Project":{  
-                  "Title":"Multi-language support",
-                  "Description":"Full app translation into multiple languages. An ongoing process.",
-                  "Owner":"None",
-                  "Done":"70%"
-               }
-            },
-            {  
-               "Project":{  
-                  "Title":"Multi-language support",
-                  "Description":"Full app translation into multiple languages. An ongoing process.",
-                  "Owner":"None",
-                  "Done":"70%"
-               }
-            },
-            {  
-               "Project":{  
-                  "Title":"Multi-language support",
-                  "Description":"Full app translation into multiple languages. An ongoing process.",
-                  "Owner":"None",
-                  "Done":"70%"
-               }
-            },
-            {  
-               "Project":{  
-                  "Title":"Multi-language support",
-                  "Description":"Full app translation into multiple languages. An ongoing process.",
-                  "Owner":"None",
-                  "Done":"70%"
-               }
+               "Projects":[  
+                  {  
+                     "Project":{  
+                        "Title":"QR scanning",
+                        "Description":"QR scanning enables faster seed and address entry. Messages can be added to address QR codes, with planned support for transaction amount (e.g. for an invoice).",
+                        "Done":"80%"
+                     }
+                  },
+                  {  
+                     "Project":{  
+                        "Title":"Multi-language support",
+                        "Description":"Full app translation into multiple languages. An ongoing process.",
+                        "Owner":"None",
+                        "Done":"70%"
+                     }
+                  },
+                  {  
+                     "Project":{  
+                        "Title":"Multi-language support",
+                        "Description":"Full app translation into multiple languages. An ongoing process.",
+                        "Owner":"None",
+                        "Done":"70%"
+                     }
+                  },
+                  {  
+                     "Project":{  
+                        "Title":"Multi-language support",
+                        "Description":"Full app translation into multiple languages. An ongoing process.",
+                        "Owner":"None",
+                        "Done":"70%"
+                     }
+                  },
+                  {  
+                     "Project":{  
+                        "Title":"Multi-language support",
+                        "Description":"Full app translation into multiple languages. An ongoing process.",
+                        "Owner":"None",
+                        "Done":"70%"
+                     }
+                  },
+                  {  
+                     "Project":{  
+                        "Title":"Multi-language support",
+                        "Description":"Full app translation into multiple languages. An ongoing process.",
+                        "Owner":"None",
+                        "Done":"70%"
+                     }
+                  },
+                  {  
+                     "Project":{  
+                        "Title":"Multi-language support",
+                        "Description":"Full app translation into multiple languages. An ongoing process.",
+                        "Owner":"None",
+                        "Done":"70%"
+                     }
+                  }
+               ]
             }
          ]
       },
