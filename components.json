@@ -73,14 +73,14 @@
       {  
          "Section":[  
             {  
-               "Title":"Cross-Platform",
-               "Text":"Features applicable to both desktop and mobile."
+               "Title":"ANOTHERONE",
+               "Text":"Feaeeeeeto both desktop and mobile."
             },
             {  
                "Projects":[  
                   {  
                      "Project":{  
-                        "Title":"QR scanning",
+                        "Title":"QR sdasdnning",
                         "Description":"QR scanning enables faster seed and address entry. Messages can be added to address QR codes, with planned support for transaction amount (e.g. for an invoice).",
                         "Done":"80%"
                      }
@@ -90,7 +90,7 @@
                         "Title":"Multi-language support",
                         "Description":"Full app translation into multiple languages. An ongoing process.",
                         "Owner":"None",
-                        "Done":"70%"
+                        "Done":"20%"
                      }
                   },
                   {  
