@@ -3,7 +3,7 @@ class Roadmap extends React.Component {
   render() {
     return (
       <span>
-        <div class="shadow-page" style={shadowStyle} />
+        <div className="shadow-page" style={shadowStyle} />
         <div className="section">
           <div className="container">
             {this.props.children}

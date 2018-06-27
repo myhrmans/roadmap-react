@@ -44,7 +44,7 @@ class Project extends React.Component {
             <div
               className="fill"
               style={{
-                width: progressNew + "%",
+                width: progressNew,
                 borderTopRightRadius: borderRad
               }}
             />
