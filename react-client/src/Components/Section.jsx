@@ -20,7 +20,7 @@ class Section extends React.Component {
               <h3 className="featureTitle">{this.props.title}</h3>{this.props.description}
             </div>
           </div>
-          <div class="slider">
+          <div className="slider">
           {this.props.children}
           </div>
         </div>

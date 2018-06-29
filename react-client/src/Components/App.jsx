@@ -5,12 +5,74 @@ import Project from './Project';
 import "../../dist/cards";
 
 class App extends Component {
-   
-    /*componentDidMount() {   
-        var json = $.getJSON('https://raw.githubusercontent.com/myhrmans/roadmap-react/master/components.json')
-     
-    }*/
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: null,
+            isLoaded: false,
+            roadmap: [],
+            theme: null
+        };
+    }
+    componentDidMount() {
+        fetch("https://raw.githubusercontent.com/myhrmans/roadmap-react/master/components.json")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    this.setState({
+                        isLoaded: true,
+                        roadmap: result.Roadmap,
+                        theme: result.Roadmap[0].Theme
+                    });
+                },
+                (error) => {
+                    this.setState({
+                        isLoaded: true, 
+                        error
+                    });
+                }
+            )
+
+    }
     render() {
+        const { error, isLoaded, roadmap, theme } = this.state;
+        var sections = [];
+        var project = [];
+        if (error) {
+            return <div>Error: {error.message}</div>;
+        } else if (!isLoaded) {
+            return <div>Loading...</div>;
+        } else {
+            return(
+                <div>
+                    <Roadmap theme={theme}>
+                {roadmap.slice(1).map(function(section,i){
+                    //console.log(section.Section);
+                    return(
+                        <Section key={i} title={section.Section[0].Title} description={section.Section[0].Text}>
+                        {section.Section[1].Projects.map(function(project,index){
+                                return(
+                                    <Project key={index} title={project.Project.Title} svg="svgs/employeetwo.svg" description={project.Project.Description} progress={project.Project.Done}></Project>
+                                )  
+                        })}
+                        </Section>
+                    )
+
+                })
+
+            
+                
+            /*for (var i = 1; i < roadmap.length; i++) {
+                page += "<Section title=" + roadmap[i].Section[0].Title + " description=" + roadmap[i].Section[0].Text + ">"
+                for (var j = 0; j < roadmap[i].Section[1].Projects.length; j++) {
+                project.push(<Project title={roadmap[i].Section[1].Projects[j].Project.Title} svg={roadmap[i].Section[1].Projects[j].Project.SvgURL} description={roadmap[i].Section[1].Projects[j].Project.Description} progress={roadmap[i].Section[1].Projects[j].Project.Done}></Project>);
+                }
+                page+="</Section>"*/
+            }
+            </Roadmap>
+            </div>
+        )
+                }
         return (
             <span>
                 <Roadmap theme="quBiC"> {/*Avalible themes: Qubic, standard*/}

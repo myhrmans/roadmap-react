@@ -15,9 +15,12 @@ Internet explorer has no support and the properties have to be edited by hand.
     --fontColorStandard: #FFFFFF; /* Standard color for  text on entire page */
     --fontColorGrey: rgb(73, 73, 73);
     --seperatorLineColor:#FFF;
+    --cardBackground: #FFF;
+    --cardFontColor:#000;
+    --cardDescriptionColor: #303030;
     --imageBackgroundCard: #fafafa; /* Background behind the SVG on each card */
     --progressColor: linear-gradient(to right, #FFF, #FFF); /* Background on each progressbar */
-    --cardBackground: #FFF;
+
 }
 body {
     font-family: 'Nunito Sans', 'sans-serif' !important;
@@ -73,6 +76,8 @@ body {
 .roadmap-block {
     background: #fff;
     background: var(--cardBackground);
+    color:#000;
+    color: var(--cardFontColor);
     height: 400px;
     width: 100%;
     border-radius: 5px;
@@ -92,7 +97,6 @@ body {
     margin-bottom: 30px;
     margin-right: 20px;
     padding-top: 74px;
-    padding-left: 15px;
 }
 
 .roadmap-title h3 {
@@ -116,7 +120,6 @@ body {
     font-size: 18px;
     padding-top: 30px;
     padding-bottom: 0px;
-    color: rgb(53, 53, 53);
 }
 
 .roadmap-block .svg {
@@ -129,7 +132,7 @@ body {
 }
 
 .roadmap-block .svg img {
-    width: 25%;
+    width: 35%;
     height: 100%;
 }
 
@@ -140,9 +143,10 @@ h3{
 
 
 .roadmap-block .description {
+    color:#303030;
+    color: var(--cardDescriptionColor);
     padding-bottom: 10px;
     margin-top: 10px;
-    color: rgb(53, 53, 53);
 }
 
 .roadmap-block .description p {
@@ -160,7 +164,6 @@ h3{
 }
 .roadmap-block .progressbarCard {
     height: 7.2px;
-    background: rgba(199, 199, 199, 0.609);
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -184,6 +187,7 @@ h3{
 }
 .showFullCard {
     color: #000000;
+    color: var(--cardFontColor);
     transition: all 0.3s ease;
     font-size: 15px;
 }

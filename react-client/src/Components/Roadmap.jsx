@@ -3,7 +3,7 @@ class Roadmap extends React.Component {
   render() {
     return (
       <span>
-        <div class="shadow-page" style={shadowStyle} />
+        <div className="shadow-page" style={shadowStyle} />
         <div className="section">
           <div className="container">
             {this.props.children}
@@ -20,9 +20,11 @@ class Roadmap extends React.Component {
         document.documentElement.style.setProperty('--backgroundEntirePage', '#0a0b15');
         document.documentElement.style.setProperty('--fontColorStandard', '#FFFFFF');
         document.documentElement.style.setProperty('--seperatorLineColor', '#ff7d11');
-        document.documentElement.style.setProperty('--imageBackgroundCard', '#fafafa');
-        document.documentElement.style.setProperty('--progressColor', 'linear-gradient(to right, #ff7d11, #8738cc)');
-        document.documentElement.style.setProperty('--cardBackground', '#fafafa');
+        document.documentElement.style.setProperty('--imageBackgroundCard', '#11142A');
+        document.documentElement.style.setProperty('--progressColor', '#572A74');
+        document.documentElement.style.setProperty('--cardFontColor', '#FFF');
+        document.documentElement.style.setProperty('--cardDescriptionColor', '#aba6c4');
+        document.documentElement.style.setProperty('--cardBackground', '#11142A');
       };
     }
     else if(theme == "standard"){

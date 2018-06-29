@@ -8,11 +8,13 @@ function destroySlider(slider) {
 }
 var cardsLoaded = function () {
     $(".block-1").each(function () {
-        counter = 1;
-        $(".block").each(function () {
-            if ((counter % 4) == 0 && counter != 0) {
+        counter = 0;
+        $(this).find(".block").each(function () {
+            console.log(this);
+            if ((counter % 3) == 0 && counter!=0) {
                 $(this).addClass("block-third");
             }
+            console.log(counter);
             counter++;
 
         })
@@ -255,8 +257,9 @@ $(window).resize(function () {
 });
 $(document).ready(function () {
 
-    cardsLoaded();
+
     cardFix();
+    cardsLoaded();
     function initSlider(slider) {
         $("." + slider).flickity({
             resize: true,
