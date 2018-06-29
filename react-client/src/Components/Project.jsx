@@ -12,7 +12,7 @@ class Project extends React.Component {
     }
     var image;
     if (svg != null && svg != "") {
-      image = <img class="svg" src={this.props.svg} />
+      image = <img className="svg" src={this.props.svg} />
     } else {
       image = null;
     }

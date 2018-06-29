@@ -27,7 +27,7 @@ class App extends Component {
                 },
                 (error) => {
                     this.setState({
-                        isLoaded: true,
+                        isLoaded: true, 
                         error
                     });
                 }
@@ -37,21 +37,41 @@ class App extends Component {
     render() {
         const { error, isLoaded, roadmap, theme } = this.state;
         var sections = [];
-        var page = "<Roadmap theme=" + theme + ">";
+        var project = [];
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {
-            for (var i = 1; i < roadmap.length; i++) {
+            return(
+                <div>
+                    <Roadmap theme={theme}>
+                {roadmap.slice(1).map(function(section,i){
+                    //console.log(section.Section);
+                    return(
+                        <Section key={i} title={section.Section[0].Title} description={section.Section[0].Text}>
+                        {section.Section[1].Projects.map(function(project,index){
+                                return(
+                                    <Project key={index} title={project.Project.Title} svg="svgs/employeetwo.svg" description={project.Project.Description} progress={project.Project.Done}></Project>
+                                )  
+                        })}
+                        </Section>
+                    )
+
+                })
+
+            
+                
+            /*for (var i = 1; i < roadmap.length; i++) {
                 page += "<Section title=" + roadmap[i].Section[0].Title + " description=" + roadmap[i].Section[0].Text + ">"
                 for (var j = 0; j < roadmap[i].Section[1].Projects.length; j++) {
-                    page += "<Project title=" + roadmap[i].Section[1].Projects[j].Project.Title + " svg=" + roadmap[i].Section[1].Projects[j].Project.SvgURL + " description=" + roadmap[i].Section[1].Projects[j].Project.Description + " progress=" + roadmap[i].Section[1].Projects[j].Project.Done + "></Project>"
+                project.push(<Project title={roadmap[i].Section[1].Projects[j].Project.Title} svg={roadmap[i].Section[1].Projects[j].Project.SvgURL} description={roadmap[i].Section[1].Projects[j].Project.Description} progress={roadmap[i].Section[1].Projects[j].Project.Done}></Project>);
                 }
-                page+="</Section>"
+                page+="</Section>"*/
             }
-            page+="</Roadmap>";
-                return (<div dangerouslySetInnerHTML={{__html: page}}></div>)
+            </Roadmap>
+            </div>
+        )
                 }
         return (
             <span>
