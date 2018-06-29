@@ -28,5 +28,3 @@ After the command finished to load, open `http://localhost:8080` in a browser.
 * Add your own SVGs under dist/svgs and simply add them inside src/Components/App.jsx
 * Adjust colors and other properties under dist/style.css
 
-### 5. Todo
-* Fix JSON injection
